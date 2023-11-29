@@ -1,7 +1,49 @@
-body 
-{
-
-    background-image: url("imgs/login.jpg");
+body {
+    background-image: url("imgs/walpaper.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    overflow-x: hidden;
+}
+
+h2, h1, h3 {
+    color: #000020;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+
+.caixa {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.aaaaa{
+    
+    background-color: #00000076;
+	border: 3px solid #991111;
+	text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+    padding: 20px;
+}
+
+input {
+    background-color: #00000050;
+    color: white;
+    margin-left: 10px;
+}
+
+.questoes {
+    width: 30vw;
+}
+
+button {
+    width: 100px;
+    height: 50px;
+    background-color: #3498db;
+    font-weight: bolder;
+    color: #000020;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+    font-size: 1.25em;
+    border: 3px solid #991111;
+    border-radius: 10%;
+    cursor: pointer;
 }
