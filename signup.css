@@ -80,3 +80,12 @@ a:hover {
   margin-top: -500px;
   position: absolute;
 }
+
+button 
+{
+  transition: background-color 2s;
+}
+button:hover,
+button:focus {
+  background: rgb(116, 196, 253);
+}

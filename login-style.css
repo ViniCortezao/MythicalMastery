@@ -87,3 +87,12 @@ h1 {
   color: #333;
   margin-bottom: 50px;
 }
+
+button 
+{
+  transition: background-color 2s;
+}
+button:hover,
+button:focus {
+  background: rgb(116, 196, 253);
+}
