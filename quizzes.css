@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-image: url("imgs/walpaper.jpg");
+    background-image: url("imgs/wallpaper.pekka.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0;
@@ -9,7 +9,7 @@ body {
     height: 100vh;
 }
 
-h1 {
+#titulo {
     color: #3498db;
     padding: 3vh;
 }
@@ -29,9 +29,55 @@ ul, h1{
   
 button {
 	border: black 0px solid;
+    font-weight: bolder;
+    color: #000020;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+    font-size: 1em;
+    border: 3px solid #991111;
+    border-radius: 10%;
+    background-color: #3498db;
 }
   
 #maisquizzes {
 	font-size: 1.65em;  
 }
+
+#ty {
+	margin-top: 500vh;
+	width: 100%;
+	padding-left: auto;
+}
   
+#caixa1{
+    margin-top: 350px;
+}
+
+#caixa{
+    margin-top: 350px;
+    float: inline-end;
+    margin-left: 3  0px;
+    
+}
+
+#criar{
+    width: 100px;   
+    margin-top: 40px;
+    margin-left: 805px;
+    float:none;
+    font-weight: bolder;
+    color: #000020;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+    font-size: 1em;
+    border: 3px solid #991111;
+    border-radius: 10%;
+    background-color: #3498db;
+}
+
+#info{
+    float: none;
+    margin-left: 820px;
+}
+
+#caixa button {
+    height: 100%;
+}

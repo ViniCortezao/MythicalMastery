@@ -35,8 +35,20 @@ const quizCortezao = [
    ];
 
 let quizJSON = [];
-	
 
+let ulEL = document.querySelector('ul');
+
+let quizUser = sessionStorage.getItem('criado');
+
+if(quizUser != null) {
+  quizUser = JSON.parse(quizUser);
+  ulEL.innerHTML += `<li id="caixa1" >
+  <button onclick="abrirQuiz(quizUser)" >
+      <p class="nomes">Quiz do usuário</p>
+      <p class="autor">Por: ${localStorage.getItem('username')}</p>
+  </button>
+</li>`
+}
 	
 
 function abrirQuiz(quiz) {
@@ -48,10 +60,9 @@ function abrirQuiz(quiz) {
 	$.getJSON({
     url: 'https://api.npoint.io/d30343c40b22796b6650',
     success: function(resposta) {
-			let ulEL = document.querySelector('ul');
 			for(let i = 0; i < resposta.length; i++) {
 				quizJSON = resposta;
-				ulEL.innerHTML += `<li>
+				ulEL.innerHTML += `<li id="caixa1">
                 <button onclick="abrirQuiz(quizJSON[${i}])" >
                     <p class="nomes">Outro Quiz ${i+1}</p>
                     <p class="autor">Por: Cortezão</p>

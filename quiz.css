@@ -44,6 +44,7 @@ button:hover {
 	text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
 	font-size: 28px;
 	text-align: left;
+  margin-top: 175px;
 }
 #options li {
 	cursor: pointer;
@@ -52,15 +53,13 @@ button:hover {
 	list-style-type: none;
 	border: 3px solid #991111;
 	display: inline-block;
+  margin-left: 70px;
 }
 #question {
 	border-bottom: 3px solid #991111;
 }
+
 #result {
 	text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
 	font-size: 28px;
 }
-#options {
-	
-}
-	
