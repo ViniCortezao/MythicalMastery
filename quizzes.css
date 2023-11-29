@@ -81,3 +81,53 @@ button {
 #caixa button {
     height: 100%;
 }
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("imgs/walpaper.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    height: 100vh;
+}
+
+#titulo {
+    color: #3498db;
+    padding: 3vh;
+}
+
+li {
+    background-color: white;
+    border: #3498db 3px solid;
+    display: inline-block;
+    margin: 10px;
+    border-radius: 5%;
+}
+
+ul, h1{
+   display: flex;
+   justify-content: center;
+}
+  
+button {
+	border: black 0px solid;
+}
+  
+#maisquizzes {
+	font-size: 1.65em;  
+}
+
+#ty {
+	margin-top: 500vh;
+	width: 100%;
+	padding-left: auto;
+}
+
+@media screen and (min-width:800px) {
+    li{
+        display: block;
+    }
+}
+  
