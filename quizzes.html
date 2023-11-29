@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="quizzes.css">
+    <title>Menu de Quizzes</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div>
+        <h1>Menu de Quizzes</h1>
+        <ul>
+            <li>
+                <button onclick="abrirQuiz(quizCafe)" >
+                    <p class="nomes">Mitologia Quiz Padrão</p>
+                    <p class="autor">Por: Café</p>
+                </button>
+            </li>
+            <li>
+                <button onclick="abrirQuiz(quizCortezao)">
+                    <p class="nomes">Mitologia Quiz Padrão 2</p>
+                    <p class ="autor">Por: Cortezão</p>
+                </button>
+            </li>
+			<li>
+                <button onclick="ligarajax()">
+                    <p id="maisquizzes" >Mais Quizzes</p>
+                </button>
+            </li>
+        </ul>
+    </div>
+	<button onclick=" window.location.href = 'info.html' ">Info</button>
+	<script src="quizzes.js" ></script>
+</body>
+</html>

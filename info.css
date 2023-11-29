@@ -1,0 +1,15 @@
+body {
+	background-image: url("imgs/cemiterio.jpg");
+	overflow: hidden;
+}
+
+div { 
+	background-color: gray;
+}
+#ty {
+	margin-top: 70vh;
+	color: #000020;
+	font-weight: bolder;
+	font-size: 5em;
+	padding-left: auto;
+}

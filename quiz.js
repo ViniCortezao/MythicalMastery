@@ -7,33 +7,17 @@ document.addEventListener("DOMContentLoaded", function() {
   let currentQuestion = 0;
   let score = 0;
 
-  const questions = [
-    {
-      question: "Quem e o deus do trovao na mitologia nordica?",
-      options: ["Odin", "Zeus", "Thor", "Hades"],
-      answer: "Thor"
-    },
-    {
-      question: "Qual é o nome da espada lendaria do Rei Arthur?",
-      options: ["Excalibur", "Mjolnir", "Caliburn", "Narsil"],
-      answer: "Excalibur"
-    },
-    {
-      question: "Qual criatura mitologica possui o corpo de um leao, cabeça de cabra e cauda de serpente?",
-      options: ["Quimera", "Minotauro", "Medusa", "Hidra"],
-      answer: "Quimera"
-    }
-  ];
+ let questions = JSON.parse(sessionStorage.getItem('questoes'));
 
   function loadQuestion() {
     if (currentQuestion < questions.length) {
       const question = questions[currentQuestion];
-      questionElement.textContent = question.question;
+      questionElement.innerHTML = question.question;
       optionsElement.innerHTML = "";
 
       for (const option of question.options) {
         const li = document.createElement("li");
-        li.textContent = option;
+        li.innerHTML = option;
         li.addEventListener("click", checkAnswer);
         optionsElement.appendChild(li);
       }
@@ -53,10 +37,11 @@ document.addEventListener("DOMContentLoaded", function() {
     currentQuestion++;
     loadQuestion();
   }
-
+ 
   function showResult() {
     questionContainer.style.display = "none";
-    resultElement.textContent = `Pontuação: ${score} de ${questions.length}`;
+    resultElement.textContent = `Pontuacao: ${score} de ${questions.length}`;
+	resultElement.innerHTML += `<br><br><button onclick=" window.location.href = 'quizzes.html' " >Voltar ao Menu</button>`;
   }
 
   loadQuestion();
